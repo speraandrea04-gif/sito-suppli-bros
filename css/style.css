@@ -284,22 +284,68 @@ em { font-style: italic; }
 /* ============================================================
    MENU
    ============================================================ */
-.menu__cat {
-  font-family: var(--font-display);
-  font-size: clamp(24px, 3vw, 32px);
-  font-weight: 550;
-  color: var(--gold-2);
-  margin: 56px 0 24px;
+/* --- Accordion categorie --- */
+.menu__group { border-bottom: 1px solid rgba(245, 239, 228, .08); }
+.section__head + .menu__group { border-top: 1px solid rgba(245, 239, 228, .08); }
+
+.menu__cat { margin: 0; }
+.menu__cat button {
   display: flex;
   align-items: center;
   gap: 18px;
+  width: 100%;
+  padding: 26px 6px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: clamp(23px, 3vw, 30px);
+  font-weight: 550;
+  color: var(--gold-2);
+  transition: color .25s ease;
 }
-.menu__cat:first-of-type { margin-top: 0; }
-.menu__cat::after {
-  content: "";
+.menu__cat button:hover { color: var(--gold); }
+.menu__cat button:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: 6px; }
+
+.menu__count {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--muted);
+  border: 1px solid rgba(245, 239, 228, .18);
+  border-radius: 999px;
+  padding: 3px 11px;
+  letter-spacing: .04em;
+}
+.menu__cat-line {
   flex: 1;
   height: 1px;
-  background: linear-gradient(90deg, rgba(232, 163, 61, .4), transparent);
+  background: linear-gradient(90deg, rgba(232, 163, 61, .35), transparent);
+}
+.menu__chevron {
+  width: 11px;
+  height: 11px;
+  border-right: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform .4s cubic-bezier(.22,.61,.36,1);
+  flex-shrink: 0;
+}
+.menu__group.is-open .menu__chevron { transform: rotate(225deg) translate(-3px, -3px); }
+
+.menu__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .55s cubic-bezier(.22,.61,.36,1);
+}
+.menu__group.is-open .menu__panel { grid-template-rows: 1fr; }
+.menu__panel-inner { overflow: hidden; min-height: 0; }
+.menu__panel-inner > .menu__grid,
+.menu__panel-inner > .menu__list { padding: 6px 2px 42px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .menu__panel, .menu__chevron { transition: none; }
 }
 
 .menu__grid {

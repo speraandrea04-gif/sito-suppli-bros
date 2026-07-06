@@ -52,6 +52,15 @@ setTimeout(() => {
   if (heroVideo.readyState < 2) activateFallback();
 }, 4000);
 
+// ---------- Menu: accordion delle categorie ----------
+document.querySelectorAll(".menu__group").forEach((group) => {
+  const btn = group.querySelector(".menu__cat button");
+  btn.addEventListener("click", () => {
+    const open = group.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", String(open));
+  });
+});
+
 // ---------- Orari: badge "Aperto/Chiuso adesso" ----------
 // Per ogni giorno (0=Domenica ... 6=Sabato) un array di fasce [apertura, chiusura] in minuti
 const WEEKLY_HOURS = {
