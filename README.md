@@ -35,6 +35,7 @@ Finché il file non esiste, il sito mostra un **fondale animato di fallback** (n
 - Telefono: +39 366 822 7327
 - Indirizzo: Via delle Gomene 23, 00054 Fiumicino (RM), con link a Google Maps
 - Instagram: instagram.com/supplibros
+- P.IVA: 17027541006
 
 ## ⚠️ Dati ancora segnaposto (cercare `⚠️` in `index.html`)
 
@@ -42,7 +43,6 @@ Finché il file non esiste, il sito mostra un **fondale animato di fallback** (n
 |---|---|---|
 | Prezzo Nuggets di pollo | sezione `#menu` | assente |
 | Email | footer | info@supplibros.it |
-| **P.IVA** | footer | IT00000000000 |
 | Link Just Eat / Glovo / Deliveroo | sezione `#ordina` + footer | `href="#"` |
 | Facebook / TikTok | footer | `href="#"` |
 
