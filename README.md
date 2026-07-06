@@ -28,20 +28,23 @@ Finché il file non esiste, il sito mostra un **fondale animato di fallback** (n
 > piano **free con 0 crediti** e i modelli video richiedono almeno il piano Basic (~15 crediti
 > per una clip 10s). Dopo l'upgrade basta rilanciare la generazione e salvare l'MP4.
 
-## ✏️ Dati da sostituire (segnaposto)
+## ✏️ Dati reali già inseriti
 
-Cercare `⚠️` in `index.html` per trovarli tutti:
+- Menù completo (5 categorie) con prezzi da leggimenu.it
+- Orari: lun 18:30–24:00, mar–dom 18:00–24:00 (anche in `WEEKLY_HOURS` in `js/main.js`)
+- Telefono: +39 366 822 7327
+- Instagram: instagram.com/supplibros
+
+## ⚠️ Dati ancora segnaposto (cercare `⚠️` in `index.html`)
 
 | Dato | Dove | Segnaposto attuale |
 |---|---|---|
-| Menù e prezzi | sezione `#menu` | 6 supplì di esempio |
-| Orari di apertura | sezione `#orari` | orari di esempio (aggiornare anche `WEEKLY_HOURS` in `js/main.js`) |
-| Indirizzo | footer `#contatti` | Via Roma 1, 00100 Roma |
-| Telefono | footer + card "Asporto" | +39 000 000 0000 |
+| Prezzo Nuggets di pollo | sezione `#menu` | assente |
+| Indirizzo | footer `#contatti` + JSON-LD | Via Roma 1, 00100 Roma |
 | Email | footer | info@supplibros.it |
 | **P.IVA** | footer | IT00000000000 |
 | Link Just Eat / Glovo / Deliveroo | sezione `#ordina` + footer | `href="#"` |
-| Social (Instagram, Facebook, TikTok) | footer | `href="#"` |
+| Facebook / TikTok | footer | `href="#"` |
 
 ## Anteprima locale
 

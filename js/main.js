@@ -53,16 +53,15 @@ setTimeout(() => {
 }, 4000);
 
 // ---------- Orari: badge "Aperto/Chiuso adesso" ----------
-// ⚠️ SEGNAPOSTO: allineare questi orari a quelli reali mostrati in index.html
-// Formato: per ogni giorno (0=Domenica ... 6=Sabato) un array di fasce [apertura, chiusura] in minuti
+// Per ogni giorno (0=Domenica ... 6=Sabato) un array di fasce [apertura, chiusura] in minuti
 const WEEKLY_HOURS = {
-  0: [[11 * 60, 22 * 60]],                              // Domenica 11:00–22:00
-  1: [],                                                // Lunedì chiuso
-  2: [[11 * 60, 15 * 60], [18 * 60, 22 * 60 + 30]],     // Martedì
-  3: [[11 * 60, 15 * 60], [18 * 60, 22 * 60 + 30]],     // Mercoledì
-  4: [[11 * 60, 15 * 60], [18 * 60, 22 * 60 + 30]],     // Giovedì
-  5: [[11 * 60, 15 * 60], [18 * 60, 23 * 60 + 30]],     // Venerdì
-  6: [[11 * 60, 23 * 60 + 30]],                         // Sabato
+  0: [[18 * 60, 24 * 60]],       // Domenica 18:00–24:00
+  1: [[18 * 60 + 30, 24 * 60]],  // Lunedì 18:30–24:00
+  2: [[18 * 60, 24 * 60]],       // Martedì 18:00–24:00
+  3: [[18 * 60, 24 * 60]],       // Mercoledì 18:00–24:00
+  4: [[18 * 60, 24 * 60]],       // Giovedì 18:00–24:00
+  5: [[18 * 60, 24 * 60]],       // Venerdì 18:00–24:00
+  6: [[18 * 60, 24 * 60]],       // Sabato 18:00–24:00
 };
 
 const statusEl = document.getElementById("openStatus");
