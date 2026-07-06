@@ -362,6 +362,43 @@ em { font-style: italic; }
   text-transform: uppercase;
   color: var(--muted);
 }
+.menu__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 56px;
+  row-gap: 0;
+}
+.mrow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 4px;
+  border-bottom: 1px dashed rgba(245, 239, 228, .1);
+}
+.mrow__main h4 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 550;
+}
+.mrow__main span {
+  display: block;
+  margin-top: 3px;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.mrow__price {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--gold);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .menu__list { grid-template-columns: 1fr; }
+}
+
 .menu__note {
   margin-top: 44px;
   text-align: center;
