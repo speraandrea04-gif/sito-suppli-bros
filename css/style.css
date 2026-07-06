@@ -430,7 +430,12 @@ em { font-style: italic; }
     linear-gradient(160deg, var(--bg-3), var(--bg-2));
   border: 1px solid rgba(232, 163, 61, .25);
 }
-.story__emoji { font-size: 96px; filter: drop-shadow(0 12px 30px rgba(232,163,61,.35)); }
+.story__logo {
+  width: 55%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 30px rgba(232, 163, 61, .35));
+}
 .story__ring {
   position: absolute; inset: -12px;
   width: calc(100% + 24px); height: calc(100% + 24px);
