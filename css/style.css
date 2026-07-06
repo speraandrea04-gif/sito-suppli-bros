@@ -103,15 +103,10 @@ em { font-style: italic; }
   justify-content: space-between;
 }
 .nav__logo { display: flex; align-items: center; gap: 12px; }
-.nav__logo-mark {
-  width: 42px; height: 42px;
-  display: grid; place-items: center;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--gold), var(--gold-2));
-  color: #241a08;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 17px;
+.nav__logo-img {
+  width: 46px; height: 46px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .5));
 }
 .nav__logo-text {
   font-family: var(--font-display);
@@ -550,7 +545,12 @@ em { font-style: italic; }
   gap: 48px;
   padding-bottom: 70px;
 }
-.nav__logo-mark--big { width: 52px; height: 52px; font-size: 21px; border-radius: 14px; margin-bottom: 18px; }
+.footer__logo-img {
+  width: 84px; height: 84px;
+  object-fit: contain;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, .5));
+}
 .footer__brand h2 {
   font-family: var(--font-display);
   font-size: 30px;
