@@ -34,17 +34,17 @@ Finché il file non esiste, il sito mostra un **fondale animato di fallback** (n
 - Orari: lun 18:30–24:00, mar–dom 18:00–24:00 (anche in `WEEKLY_HOURS` in `js/main.js`)
 - Telefono: +39 366 822 7327
 - Indirizzo: Via delle Gomene 23, 00054 Fiumicino (RM), con link a Google Maps
-- Instagram: instagram.com/supplibros
+- Instagram: instagram.com/supplibros · TikTok: tiktok.com/@suppli_bros
 - P.IVA: 17027541006
+- Email (PEC): supplibross@pec.it
 
 ## ⚠️ Dati ancora segnaposto (cercare `⚠️` in `index.html`)
 
 | Dato | Dove | Segnaposto attuale |
 |---|---|---|
 | Prezzo Nuggets di pollo | sezione `#menu` | assente |
-| Email | footer | info@supplibros.it |
 | Link Just Eat / Glovo / Deliveroo | sezione `#ordina` + footer | `href="#"` |
-| Facebook / TikTok | footer | `href="#"` |
+| Facebook | footer | `href="#"` |
 
 ## Anteprima locale
 
