@@ -44,7 +44,6 @@ Finché il file non esiste, il sito mostra un **fondale animato di fallback** (n
 | Dato | Dove | Segnaposto attuale |
 |---|---|---|
 | Prezzo Nuggets di pollo | sezione `#menu` | assente |
-| Facebook | footer | `href="#"` |
 
 ## Anteprima locale
 
