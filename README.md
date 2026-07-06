@@ -33,6 +33,7 @@ Finché il file non esiste, il sito mostra un **fondale animato di fallback** (n
 - Menù completo (5 categorie) con prezzi da leggimenu.it
 - Orari: lun 18:30–24:00, mar–dom 18:00–24:00 (anche in `WEEKLY_HOURS` in `js/main.js`)
 - Telefono: +39 366 822 7327
+- Indirizzo: Via delle Gomene 23, 00054 Fiumicino (RM), con link a Google Maps
 - Instagram: instagram.com/supplibros
 
 ## ⚠️ Dati ancora segnaposto (cercare `⚠️` in `index.html`)
@@ -40,7 +41,6 @@ Finché il file non esiste, il sito mostra un **fondale animato di fallback** (n
 | Dato | Dove | Segnaposto attuale |
 |---|---|---|
 | Prezzo Nuggets di pollo | sezione `#menu` | assente |
-| Indirizzo | footer `#contatti` + JSON-LD | Via Roma 1, 00100 Roma |
 | Email | footer | info@supplibros.it |
 | **P.IVA** | footer | IT00000000000 |
 | Link Just Eat / Glovo / Deliveroo | sezione `#ordina` + footer | `href="#"` |
