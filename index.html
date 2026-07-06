@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Supplì Bros — I veri supplì romani, fritti al momento. Classici e gourmet, da asporto e delivery. Ordina su Just Eat, Glovo e Deliveroo.">
+  <meta name="theme-color" content="#12100d">
+  <meta property="og:title" content="Supplì Bros — Il supplì fatto ad arte">
+  <meta property="og:description" content="I veri supplì romani, fritti al momento. Ordina online o vieni a trovarci.">
+  <meta property="og:type" content="website">
+  <title>Supplì Bros — Il supplì fatto ad arte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍙</text></svg>">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Supplì Bros",
+    "servesCuisine": "Street food romano, Supplì",
+    "priceRange": "€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Roma 1",
+      "addressLocality": "Roma",
+      "addressCountry": "IT"
+    },
+    "telephone": "+39 000 000 0000"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <span class="nav__logo-mark">SB</span>
+        <span class="nav__logo-text">Supplì<em>Bros</em></span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#menu">Menù</a>
+        <a href="#storia">La nostra storia</a>
+        <a href="#orari">Orari</a>
+        <a href="#contatti">Contatti</a>
+        <a href="#ordina" class="btn btn--small btn--gold">Ordina ora</a>
+      </nav>
+      <button class="nav__burger" id="navBurger" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero__media">
+      <!--
+        VIDEO HERO — generato con Higgsfield (higgy).
+        Quando il file è pronto, va salvato in: assets/video/suppli-hero.mp4
+        Se il video non è presente, il sito mostra automaticamente il fondale animato di fallback.
+      -->
+      <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.svg">
+        <source src="assets/video/suppli-hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero__fallback" id="heroFallback" aria-hidden="true">
+        <div class="hero__glow"></div>
+        <div class="hero__grain"></div>
+      </div>
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Street food romano · Fritto al momento</p>
+      <h1 class="hero__title">
+        <span class="reveal">Il supplì</span>
+        <span class="reveal reveal--d1"><em>fatto ad arte.</em></span>
+      </h1>
+      <p class="hero__sub reveal reveal--d2">
+        Riso mantecato, cuore di mozzarella filante, panatura dorata.
+        Ogni supplì è fritto al momento, solo per te.
+      </p>
+      <div class="hero__cta reveal reveal--d3">
+        <a href="#ordina" class="btn btn--gold">Ordina a domicilio</a>
+        <a href="#menu" class="btn btn--ghost">Scopri il menù</a>
+      </div>
+    </div>
+
+    <a href="#menu" class="hero__scroll" aria-label="Scorri al menù">
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Supplì al telefono</span><i>✦</i>
+      <span>Fritto al momento</span><i>✦</i>
+      <span>Mozzarella filante</span><i>✦</i>
+      <span>Ricetta romana</span><i>✦</i>
+      <span>Supplì al telefono</span><i>✦</i>
+      <span>Fritto al momento</span><i>✦</i>
+      <span>Mozzarella filante</span><i>✦</i>
+      <span>Ricetta romana</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ===== MENU ===== -->
+  <section class="section menu" id="menu">
+    <div class="section__head">
+      <p class="section__eyebrow reveal">Il menù</p>
+      <h2 class="section__title reveal reveal--d1">I nostri supplì</h2>
+      <p class="section__sub reveal reveal--d2">
+        Materie prime selezionate, ricette della tradizione romana e qualche follia dei Bros.
+      </p>
+    </div>
+
+    <div class="menu__grid">
+      <!-- ⚠️ MENÙ SEGNAPOSTO: sostituire con prodotti e prezzi reali -->
+      <article class="card reveal">
+        <div class="card__badge">Il classico</div>
+        <h3>Supplì Classico</h3>
+        <p>Riso al pomodoro, cuore di fior di latte, panatura croccante. Quello vero, alla romana.</p>
+        <span class="card__price">€ 2,00</span>
+      </article>
+
+      <article class="card reveal reveal--d1">
+        <div class="card__badge card__badge--hot">Best seller</div>
+        <h3>Supplì Cacio e Pepe</h3>
+        <p>Riso mantecato al pecorino romano DOP e pepe nero tostato. Roma in un morso.</p>
+        <span class="card__price">€ 2,50</span>
+      </article>
+
+      <article class="card reveal reveal--d2">
+        <div class="card__badge">Tradizione</div>
+        <h3>Supplì Carbonara</h3>
+        <p>Guanciale croccante, crema d'uovo e pecorino. La carbonara che si mangia con le mani.</p>
+        <span class="card__price">€ 2,50</span>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__badge">Tradizione</div>
+        <h3>Supplì Amatriciana</h3>
+        <p>Pomodoro, guanciale e pecorino romano: l'amatriciana in versione dorata e filante.</p>
+        <span class="card__price">€ 2,50</span>
+      </article>
+
+      <article class="card reveal reveal--d1">
+        <div class="card__badge card__badge--hot">Piccante</div>
+        <h3>Supplì 'Nduja</h3>
+        <p>Cuore di 'nduja calabrese e provola affumicata. Per chi non ha paura del fuoco.</p>
+        <span class="card__price">€ 2,80</span>
+      </article>
+
+      <article class="card reveal reveal--d2">
+        <div class="card__badge card__badge--veg">Vegetariano</div>
+        <h3>Supplì Ortolano</h3>
+        <p>Verdure di stagione grigliate, riso allo zafferano e scamorza dolce.</p>
+        <span class="card__price">€ 2,50</span>
+      </article>
+    </div>
+
+    <p class="menu__note reveal">
+      * Chiedici anche le <strong>fritture del giorno</strong>: filetti di baccalà, fiori di zucca, crocchette di patate.
+      Il menù completo è disponibile in negozio e sulle app di delivery.
+    </p>
+  </section>
+
+  <!-- ===== STORIA ===== -->
+  <section class="section story" id="storia">
+    <div class="story__inner">
+      <div class="story__text">
+        <p class="section__eyebrow reveal">La nostra storia</p>
+        <h2 class="section__title reveal reveal--d1">Due fratelli,<br>una friggitrice,<br><em>un'ossessione.</em></h2>
+        <p class="reveal reveal--d2">
+          Supplì Bros nasce dalla passione di due fratelli per il pezzo più iconico dello street food romano.
+          Niente scorciatoie: riso cotto lentamente nel sugo, mozzarella tagliata a mano,
+          doppia panatura e olio sempre pulito.
+        </p>
+        <p class="reveal reveal--d3">
+          Ogni supplì viene fritto <strong>solo al momento dell'ordine</strong>. Per questo, quando lo apri,
+          la mozzarella fila sempre: il famoso <em>supplì al telefono</em>.
+        </p>
+      </div>
+      <div class="story__visual reveal reveal--d2" aria-hidden="true">
+        <div class="story__circle">
+          <span class="story__emoji">🍙</span>
+          <svg class="story__ring" viewBox="0 0 200 200">
+            <defs>
+              <path id="circlePath" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"></path>
+            </defs>
+            <text>
+              <textPath href="#circlePath">SUPPLÌ BROS · FRITTO AL MOMENTO · SUPPLÌ BROS · FRITTO AL MOMENTO ·</textPath>
+            </text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ORDINA / DELIVERY ===== -->
+  <section class="section order" id="ordina">
+    <div class="section__head">
+      <p class="section__eyebrow reveal">Delivery &amp; asporto</p>
+      <h2 class="section__title reveal reveal--d1">Ordina dove vuoi tu</h2>
+      <p class="section__sub reveal reveal--d2">Ci trovi sulle principali piattaforme di delivery, oppure chiamaci per l'asporto.</p>
+    </div>
+
+    <div class="order__grid">
+      <!-- ⚠️ LINK SEGNAPOSTO: sostituire href="#" con i link reali delle piattaforme -->
+      <a href="#" class="order__card order__card--justeat reveal" target="_blank" rel="noopener">
+        <span class="order__logo">Just Eat</span>
+        <span class="order__hint">Ordina su Just Eat →</span>
+      </a>
+      <a href="#" class="order__card order__card--glovo reveal reveal--d1" target="_blank" rel="noopener">
+        <span class="order__logo">Glovo</span>
+        <span class="order__hint">Ordina su Glovo →</span>
+      </a>
+      <a href="#" class="order__card order__card--deliveroo reveal reveal--d2" target="_blank" rel="noopener">
+        <span class="order__logo">Deliveroo</span>
+        <span class="order__hint">Ordina su Deliveroo →</span>
+      </a>
+      <a href="tel:+390000000000" class="order__card order__card--phone reveal reveal--d3">
+        <span class="order__logo">📞 Asporto</span>
+        <span class="order__hint">Chiama e ritira →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== ORARI ===== -->
+  <section class="section hours" id="orari">
+    <div class="hours__inner">
+      <div class="hours__head">
+        <p class="section__eyebrow reveal">Quando trovarci</p>
+        <h2 class="section__title reveal reveal--d1">Orari di apertura</h2>
+        <p class="hours__status reveal reveal--d2" id="openStatus"></p>
+      </div>
+      <!-- ⚠️ ORARI SEGNAPOSTO: sostituire con gli orari reali (aggiornare anche js/main.js) -->
+      <ul class="hours__list reveal reveal--d2">
+        <li><span>Lunedì</span><strong class="hours__closed">Chiuso</strong></li>
+        <li><span>Martedì</span><strong>11:00 – 15:00 · 18:00 – 22:30</strong></li>
+        <li><span>Mercoledì</span><strong>11:00 – 15:00 · 18:00 – 22:30</strong></li>
+        <li><span>Giovedì</span><strong>11:00 – 15:00 · 18:00 – 22:30</strong></li>
+        <li><span>Venerdì</span><strong>11:00 – 15:00 · 18:00 – 23:30</strong></li>
+        <li><span>Sabato</span><strong>11:00 – 23:30</strong></li>
+        <li><span>Domenica</span><strong>11:00 – 22:00</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CONTATTI / FOOTER ===== -->
+  <footer class="footer" id="contatti">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-mark nav__logo-mark--big">SB</span>
+        <h2>Supplì<em>Bros</em></h2>
+        <p>Il supplì fatto ad arte, dal cuore di Roma.</p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Dove siamo</h3>
+        <!-- ⚠️ DATI SEGNAPOSTO: sostituire con indirizzo e contatti reali -->
+        <p>Via Roma 1<br>00100 Roma (RM)</p>
+        <p><a href="tel:+390000000000">+39 000 000 0000</a></p>
+        <p><a href="mailto:info@supplibros.it">info@supplibros.it</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Seguici</h3>
+        <p><a href="#" target="_blank" rel="noopener">Instagram</a></p>
+        <p><a href="#" target="_blank" rel="noopener">Facebook</a></p>
+        <p><a href="#" target="_blank" rel="noopener">TikTok</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Ordina online</h3>
+        <p><a href="#" target="_blank" rel="noopener">Just Eat</a></p>
+        <p><a href="#" target="_blank" rel="noopener">Glovo</a></p>
+        <p><a href="#" target="_blank" rel="noopener">Deliveroo</a></p>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <!-- ⚠️ P.IVA SEGNAPOSTO: sostituire con la Partita IVA reale -->
+      <p>© <span id="year"></span> Supplì Bros S.r.l. · P.IVA IT00000000000 · Tutti i diritti riservati</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
