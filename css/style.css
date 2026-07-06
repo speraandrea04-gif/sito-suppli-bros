@@ -354,6 +354,14 @@ em { font-style: italic; }
   color: var(--gold);
   font-weight: 600;
 }
+.card__meta {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
 .menu__note {
   margin-top: 44px;
   text-align: center;
