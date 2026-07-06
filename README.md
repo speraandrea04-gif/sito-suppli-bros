@@ -35,6 +35,7 @@ Finché il file non esiste, il sito mostra un **fondale animato di fallback** (n
 - Telefono: +39 366 822 7327
 - Indirizzo: Via delle Gomene 23, 00054 Fiumicino (RM), con link a Google Maps
 - Instagram: instagram.com/supplibros · TikTok: tiktok.com/@suppli_bros
+- Delivery: link Just Eat e Glovo reali (sezione `#ordina` + footer)
 - P.IVA: 17027541006
 - Email (PEC): supplibross@pec.it
 
@@ -43,7 +44,6 @@ Finché il file non esiste, il sito mostra un **fondale animato di fallback** (n
 | Dato | Dove | Segnaposto attuale |
 |---|---|---|
 | Prezzo Nuggets di pollo | sezione `#menu` | assente |
-| Link Just Eat / Glovo / Deliveroo | sezione `#ordina` + footer | `href="#"` |
 | Facebook | footer | `href="#"` |
 
 ## Anteprima locale
